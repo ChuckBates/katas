@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using static GameOfLife.Extensions;
 
 namespace GameOfLife
 {
@@ -20,7 +21,7 @@ namespace GameOfLife
                 var evolvedGrid = generation.EvolveGrid(grid);
                 generations++;
                 Grid.Print(evolvedGrid.CurrentGrid, generations);
-                if (Grid.Equal(evolvedGrid.CurrentGrid, grid.CurrentGrid))
+                if (evolvedGrid.CurrentGrid.Equals(grid.CurrentGrid))
                 {
                     evolve = false;
                 }
