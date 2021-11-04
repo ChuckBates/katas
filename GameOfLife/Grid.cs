@@ -51,22 +51,6 @@ namespace GameOfLife
             return grid;
         }
 
-        // public static bool Equal(string[,] first, string[,] second)
-        // {
-        //     for (int i = 0; i < first.GetLength(0); i++)
-        //     {
-        //         for (int j = 0; j < first.GetLength(1); j++)
-        //         {
-        //             if (first[i, j] != second[i, j])
-        //             {
-        //                 return false;
-        //             }
-        //         }
-        //     }
-        //
-        //     return true;
-        // }
-
         public static void Print(string[,] grid, int generations)
         {
             Console.SetCursorPosition(0, 0);
